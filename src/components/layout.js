@@ -7,26 +7,42 @@ const LinkContainer = styled.ul`
 list-style: none;
 display:flex;
 gap: 15px;
+padding: 0px
 `
 
+const NavLink = styled(Link)`
+text-decoration: none;
+color: black;
+&:hover{
+    color: tomato;
+}
+`
+const Container = styled.main`
+margin:auto;
+max-width: 500px;
+font-family: sans-serif;
+display: flex;
+flex-direction:column;
+align-items: center;
+justify-content: center;
+`
 const Layout = ({ pageTitle, children }) => {
     return (
-
-        <main>
+        <Container>
             <title>{pageTitle}</title>
             <nav>
                 <LinkContainer>
                     <li>
-                        <Link to='/'>Home page</Link>
+                        <NavLink to='/'>Home page</NavLink>
                     </li>
                     <li>
-                        <Link to='/AboutPage'>About</Link>
+                        <NavLink to='/AboutPage'>About</NavLink>
                     </li>
                 </LinkContainer>
             </nav>
             <h1>{pageTitle}</h1>
             {children}
-        </main>
+        </Container>
     )
 }
 
