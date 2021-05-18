@@ -12,7 +12,6 @@ const IndexPage = () => {
       <p>I'm making this by following Gatsby's totorial</p>
       </Layout>
       
-
     
   )
 }
