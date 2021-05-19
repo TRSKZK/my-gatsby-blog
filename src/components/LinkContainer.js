@@ -25,6 +25,12 @@ const LinkContainer = () => {
             <li>
                 <NavLink to='/AboutPage'>About</NavLink>
             </li>
+            <li>
+                <NavLink to='/Contact'>Contact</NavLink>
+            </li>
+            <li>
+                <NavLink to='/Blog'>Blog</NavLink>
+            </li>
         </LinkList>
     )
 }

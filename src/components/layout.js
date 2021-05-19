@@ -19,10 +19,6 @@ color:rebeccapurple;
 
 `
 
-
-
-
-
 const Layout = ({ pageTitle, children }) => {
     return (
         <Container>
